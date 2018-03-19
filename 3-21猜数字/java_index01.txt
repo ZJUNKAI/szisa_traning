@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class index01 {
+
+	public static void main(String[] args) {
+		//TODO Auto-generated method stub
+		int i=(int)(Math.random()*1000);
+		int n=0;
+		System.out.println("请输入0到1000的整数");
+		Scanner sc=new Scanner(System.in);
+        for(int j=0;j<=1000;j++){
+        	
+		System.out.print("你输入的数为：");
+		int x=sc.nextInt();
+	
+		n=n+1;
+		if(x>i)
+		{
+			System.out.println("大了");
+			continue;
+		}
+		
+		else if(x<i)
+		{
+			System.out.println("小了");
+			continue;
+		}
+		
+		else 
+		{
+			System.out.println("猜对了");
+			break;
+		}
+		
+		}
+        System.out.println("你输入的次数为："+n+"次");
+	}
+}
+
+
